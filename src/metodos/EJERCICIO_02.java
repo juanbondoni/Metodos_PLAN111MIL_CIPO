@@ -16,13 +16,14 @@ public class EJERCICIO_02
     public static void main(String[] ARGUMENTOS)
     {
         TECLADO = new Scanner(System.in);
-        int NUMERO_01,NUMERO_02,OP_SUMA,OP_RESTA,OP_MULTIPLICACION;
+        int NUMERO_01,NUMERO_02, NUMERO_03,OP_SUMA,OP_RESTA,OP_MULTIPLICACION;
         float OP_DIVISION;
  
         NUMERO_01 = LEER_NUMERO("NUMERO 01");
         NUMERO_02 = LEER_NUMERO("NUMERO_02");
+        NUMERO_03 = LEER_NUMERO("NUMERO 03");
  
-        OP_SUMA = SUMA(NUMERO_01,NUMERO_02);
+        OP_SUMA = SUMA(NUMERO_01,NUMERO_02, NUMERO_03);
         OP_RESTA = RESTA(NUMERO_01,NUMERO_02);
         OP_MULTIPLICACION = MULTIPLICACION(NUMERO_01,NUMERO_02);
         OP_DIVISION = DIVISION(NUMERO_01,NUMERO_02);
@@ -40,11 +41,11 @@ public class EJERCICIO_02
         return NUMERO;
     }
  
-    public static int SUMA(int NUM_01, int NUM_02)
+    public static int SUMA(int NUM_01, int NUM_02, int NUM_03)
     {
         int SUMA;
  
-        SUMA = NUM_01 + NUM_02;
+        SUMA = NUM_01 + NUM_02 + NUM_03;
  
         return SUMA;
     }
